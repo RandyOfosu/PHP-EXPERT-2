@@ -14,12 +14,12 @@ class Medewerker extends Migration
     public function up()
     {
         Schema::create('medewerker', function (Blueprint $table) {
-            $table->id()->primary();
+            $table->id()->foreignId();
             $table->string('voornaam', 50);
             $table->string('achternaam', 50);
             $table->string('email')->unique();
+            $table->string('wachtwoorden');
             $table->char('rol', 20);
-            $table->tinyInt('kosten');
         });
     }
 

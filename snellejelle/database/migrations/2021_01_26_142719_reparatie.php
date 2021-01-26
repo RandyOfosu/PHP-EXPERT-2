@@ -18,7 +18,7 @@ class Reparatie extends Migration
             $table->string('titel', 50);
             $table->date('datum');
             $table->time('tijdstip');
-            $table->tinyInt('kosten');
+            $table->floatval('kosten');
         });
     }
 
