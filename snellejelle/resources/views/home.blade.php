@@ -17,6 +17,7 @@
                     {{ __('Je bent ingelogged') }}
                 </div>
             </div>
+            
         </div>
     </div>
 </div>
